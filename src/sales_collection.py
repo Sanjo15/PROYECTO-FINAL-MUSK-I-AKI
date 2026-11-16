@@ -1,6 +1,6 @@
 import pandas as pd
 
-class salestCollection:
+class Sales_Collection:
     def __init__(self):
         with open(r"C:\Users\Usuario\Desktop\Proyecto_final_Musk\PROYECTO-FINAL-MUSK-I-AKI\data\sales.csv", "r", encoding="utf-8") as archivo:
             self.lista_ventas = pd.read_csv(archivo, index_col= False)
@@ -21,5 +21,3 @@ class salestCollection:
         ventas_cliente_selecciado = self.lista_ventas[self.lista_ventas["client_id"] == client_id]
         print(ventas_cliente_selecciado["amount"].describe()["mean"])
 
-#sale1 = salestCollection()
-#print(sale1.sales_by_client(1))

@@ -1,6 +1,6 @@
 import json
 
-class client_collection:
+class Client_Collection:
     def __init__(self):
         with open (r"C:\Users\Usuario\Desktop\Proyecto_final_Musk\PROYECTO-FINAL-MUSK-I-AKI\data\clients.json", "r", encoding="utf-8") as f:
             self.clientes_dict = json.load(f)
