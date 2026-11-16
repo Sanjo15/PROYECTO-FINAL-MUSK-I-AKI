@@ -2,9 +2,8 @@ import json
 import pandas as pd
 from datetime import datetime
 
-from client import  Cliente
-from sale import Sale
-from client_collection import client_collection
-from sales_collection import salestCollection
 import analyze
-
+import client_collection
+import client
+import sale 
+import sales_collection
